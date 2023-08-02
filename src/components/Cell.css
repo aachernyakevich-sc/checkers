@@ -1,0 +1,18 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    background: darkslateblue;
+    border: 1px solid #272054;
+    cursor: pointer;
+    outline: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell.odd {
+    margin-left: 100px;
+}
+.cell.even {
+    margin-right: 100px;
+}
