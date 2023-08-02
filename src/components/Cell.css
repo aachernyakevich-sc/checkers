@@ -10,9 +10,3 @@
     justify-content: center;
     align-items: center;
 }
-.cell.odd {
-    margin-left: 100px;
-}
-.cell.even {
-    margin-right: 100px;
-}

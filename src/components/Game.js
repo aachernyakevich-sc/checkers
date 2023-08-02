@@ -1,12 +1,19 @@
-import React, {useState} from "react";
+import React from "react";
 import './Game.css';
 import Board from "./Board";
-
+let board = [
+    [0,1,0,1,0,1,0,1],
+    [1,0,1,0,1,0,1,0],
+    [0,1,0,1,0,1,0,1],
+    [1,0,1,0,1,0,1,0],
+    [0,1,0,1,0,1,0,1],
+    [1,0,1,0,1,0,1,0],
+    [0,1,0,1,0,1,0,1],
+    [1,0,1,0,1,0,1,0]
+]
 const Game = () => {
-    const [board, setBoard] = useState(Array(32).fill(null))
-    const handleClick = (index) => {
-        const boardCopy = [...board];
-        setBoard(boardCopy);
+
+    const handleClick = () => {
         alert("ho-ho");
     }
     return (
