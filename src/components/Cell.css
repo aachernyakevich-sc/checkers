@@ -3,10 +3,17 @@
     height: 100px;
     background: darkslateblue;
     border: 1px solid #272054;
-    cursor: pointer;
     outline: none;
     font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cell.left {
+    margin-left: 100px;
+}
+
+.cell.right {
+    margin-right: 100px;
 }

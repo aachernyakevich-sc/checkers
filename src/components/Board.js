@@ -3,21 +3,32 @@ import './Board.css'
 import Cell from "./Cell";
 
 const Board = ({cells, click}) => {
-    const generator = (cells) => {
-        for (let i = 0; i<cells.length; i++) {
+        return (
+            <div className="board">
+                {
+                    cells.map(
+                        (row, i) => (
+                            <>{
+                                row.map((cell, j) => {
+                                    if (row[j] === 1) {
+                                        if(i%2 === 0){
+                                            return <Cell class={"left"} key={i+" "+j} value={" "}
+                                                         onClick={() => click(i)}/>
+                                        } else {
+                                            return <Cell class={"right"} key={i + " " + j} value={" "}
+                                                         onClick={() => click(i)}/>
+                                        }
+                                    } else {
+                                        <></>
+                                    }
+                                })
+                            }</>
 
-        }
-    }
-    return (
-        <div className="board">
-            {
-                cells.map(
-                    (cell, i) => (
-                    <Cell class="cell" key={i} value={} onClick={() => click(i)}/>
-                ))
-            }
-        </div>
-    )
+                        )
+                    )
+                }
+            </div>
+        )
 }
 
 export default Board;
