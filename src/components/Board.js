@@ -13,7 +13,7 @@ const Board = ({cells, click}) => {
                                         return row[j] === 1
                                             ? <Cell class={i%2 === 0 ? "left" : "right"}
                                                     key={i+" "+j}
-                                                    value={" "}
+                                                    value={i+" "+j}
                                                     onClick={() => click(i)}/>
                                             : <></>
                                 })

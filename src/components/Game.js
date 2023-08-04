@@ -14,7 +14,7 @@ const board = [
 const Game = () => {
 
     const handleClick = () => {
-        alert("ho-ho");
+        alert("ho-ho-ho");
     }
     return (
         <div className="wrapper">
