@@ -1,0 +1,8 @@
+.board {
+    width: 800px;
+    height: 800px;
+    background: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
