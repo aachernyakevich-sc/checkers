@@ -10,17 +10,12 @@ const Board = ({cells, click}) => {
                         (row, i) => (
                             <>{
                                 row.map((cell, j) => {
-                                    if (row[j] === 1) {
-                                        if(i%2 === 0){
-                                            return <Cell class={"left"} key={i+" "+j} value={" "}
-                                                         onClick={() => click(i)}/>
-                                        } else {
-                                            return <Cell class={"right"} key={i + " " + j} value={" "}
-                                                         onClick={() => click(i)}/>
-                                        }
-                                    } else {
-                                        <></>
-                                    }
+                                        return row[j] === 1
+                                            ? <Cell class={i%2 === 0 ? "left" : "right"}
+                                                    key={i+" "+j}
+                                                    value={" "}
+                                                    onClick={() => click(i)}/>
+                                            : <></>
                                 })
                             }</>
 

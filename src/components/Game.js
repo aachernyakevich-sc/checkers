@@ -1,7 +1,7 @@
 import React from "react";
 import './Game.css';
 import Board from "./Board";
-let board = [
+const board = [
     [0,1,0,1,0,1,0,1],
     [1,0,1,0,1,0,1,0],
     [0,1,0,1,0,1,0,1],
