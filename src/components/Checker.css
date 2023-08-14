@@ -1,0 +1,21 @@
+.checker {
+    width: 90px;
+    height: 90px;
+    border: 5px solid;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checker.white {
+    background: #ccbeff;
+    border:  5px solid #7b6ac9;
+}
+
+.checker.black{
+    background: #664da9;
+    border:  5px solid #23165b;
+}
