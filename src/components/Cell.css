@@ -1,7 +1,7 @@
 .cell {
     width: 100px;
     height: 100px;
-    background: #a7afcc;
+    background: lightsteelblue;
     outline: none;
     font-size: 60px;
     display: flex;

@@ -1,24 +1,24 @@
-import React, {useState} from "react";
+import React from "react";
 import './Checker.css'
 const Checker = (props) => {
-
-    const [isActive, setIsActive] = useState(false);
     const handleClick = (e) =>  {
-        setIsActive(!isActive);
-        props.onClick(props.place);
+        e.stopPropagation();
+        props.activator(true);
+        props.onClick(e, props.x, props.y);
     }
 
     return (
-        <div className={"checker" + props.class}
+        <button className={"checker" + props.class}
              style = {
                 {
-                 backgroundColor: isActive ? 'salmon' : '',
-                 borderColor: isActive ? 'red' : '',
+                 backgroundColor: (props.activeChecker.y === props.y &&
+                     props.activeChecker.x === props.x) ? 'mediumpurple' : ''
                 }
             }
              onClick={handleClick}
-             cellId={props.place}
-        ></div>
+             x={props.x}
+             y={props.y}
+        ></button>
     )
 }
 

@@ -11,11 +11,11 @@
     align-items: center;
 }
 .checker.white {
-    background: #ccbeff;
-    border:  5px solid #7b6ac9;
+    background: lavender;
+    border:  5px solid thistle;
 }
 
 .checker.black{
-    background: #664da9;
-    border:  5px solid #23165b;
+    background: slateblue;
+    border:  5px solid darkslateblue;
 }
