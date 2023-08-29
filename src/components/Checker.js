@@ -1,5 +1,6 @@
 import React from "react";
 import './Checker.css'
+
 const Checker = (props) => {
     const handleClick = (e) =>  {
         e.stopPropagation();
@@ -8,13 +9,10 @@ const Checker = (props) => {
     }
 
     return (
-        <button className={"checker" + props.class}
-             style = {
-                {
-                 backgroundColor: (props.activeChecker.y === props.y &&
-                     props.activeChecker.x === props.x) ? 'mediumpurple' : ''
-                }
-            }
+        <button className={"checker" + props.class
+            + ((props.activeChecker.y === props.y &&
+            props.activeChecker.x === props.x) ? " chosen" : '')
+        }
              onClick={handleClick}
              x={props.x}
              y={props.y}

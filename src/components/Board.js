@@ -9,7 +9,8 @@ const Board = ({cells,
                    activeChecker,
                    activator,
                    whereCanGo,
-                   movePossible
+                   movePossible,
+                   catchPossible
 }) => {
     return (
         <div className="board">
@@ -30,6 +31,7 @@ const Board = ({cells,
                                             activeChecker={activeChecker}
                                             whereCanGo={whereCanGo}
                                             movePossible={movePossible}
+                                            catchPossible={catchPossible}
                                     />
                                 : <></>
                             })
