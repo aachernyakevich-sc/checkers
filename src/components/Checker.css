@@ -1,0 +1,30 @@
+.checker {
+    width: 90px;
+    height: 90px;
+    border: 5px solid;
+    border-radius: 45px;
+    cursor: pointer;
+    outline: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checker.WHITE {
+    background: lavender;
+    border:  5px solid rebeccapurple;
+}
+.checker.BLACK{
+    background: slateblue;
+    border:  5px solid darkslateblue;
+}
+
+.checker.BLACK.chosen{
+    background: mediumpurple;
+    border:  5px solid darkslateblue;
+}
+.checker.WHITE.chosen {
+    background: thistle;
+    border:  5px solid rebeccapurple;
+}
